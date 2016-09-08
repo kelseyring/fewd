@@ -9,10 +9,11 @@
 
 <body>
   <header>
-    <img src="images/acme-corp.jpg" class="logo" alt="Acme Anvil Corporation" height=70 />
-      <button class=signup > Sign Up </button>
+    <img src="images/acme-corp.jpg" height=70 />
+      <button class="firsta" type="Sign Up"> <a href="signup.html">Sign Up</a> </button>
       <ul>
-        <li class=white> Products </li>
+        <li>  <a href="product.html" class="firsta" >Products</a>
+        </li>
       </ul>
   </header>
 
@@ -30,7 +31,7 @@
           </article>
         <nav>
           <button type="Add to Cart"> Add to Cart </button>
-          <a href="#">Details</a>
+          <a class= "seconda" href="#">Details</a>
         </nav>
         </section>
       </div>
@@ -38,12 +39,12 @@
       <div class="second">
           <img src="images/hair.jpg"alt width=200px/>
           <section class=middle>
-            <article class="second a">
+            <article>
               ACME Hair Grower (patended) is guarenteed make short hair long in a flash.
             </article>
             <nav>
               <button type="Add to Cart"> Add to Cart </button>
-              <a href="#">Details</a>
+              <a class= "seconda" href="#">Details</a>
             </nav>
         </section>
       </div>
@@ -55,7 +56,7 @@
             Another item in the Acme Jet Propelled Line of products is the ACME Jet Propelled Unicycle, which even the most unbalanced individual can ride with ease.
           </article>
           <button type="Add to Cart"> Add to Cart </button>
-          <a href="#">Details</a>
+          <a class= "seconda" href="#">Details</a>
         </section>
       </div>
 
@@ -145,7 +146,7 @@
   .logo {
     box-shadow: 0 0 0 0;
   }
-  div. second {
+  div .second {
     border-bottom: 1px #cccccc solid;
   }
   img {
@@ -153,10 +154,16 @@
     margin: 0 20px 20px 0;
     box-shadow: 0 0 0 4px #CCCCCC;
   }
-  a{
+  .seconda {
     color: #2A4CB2;
     text-decoration: none;
     margin: 20px;
     margin-top: 30px;
+  }
+
+  .firsta {
+    text-decoration: none;
+    color: white;
+    float: right;
   }
 </style>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+
+  <body>
+    <form class="" action="index.html" method="post">
+      <fieldset> <legend> NAME  </legend>
+          <div class="form-row">
+            <label for=""> First </label>
+            <input type="text" name="First" value="John">
+          </div>
+          <div class="form-row">
+            <label for=""> Last </label>
+            <input type="text" name="Last" value="Doe">
+          </div>
+       </fieldset>
+
+      <fieldset> <legend> ACCOUNT INFO </legend>
+        <div class="form-row">
+          <label for="Email"> Email </label>
+          <input type="text" name="Email" value="john@example.com">
+        </div>
+        <div class="form-row">
+          <label for=""> Password </label>
+          <input type="text" name="Last" value="secret">
+        </div>
+      </fieldset>
+
+      <fieldset> <legend> GENDER </legend>
+        <div class="form-row">
+          <input type="radio" name="Female" value="" id="female">
+          <label for="female"> Female </label>
+          <input type="radio" name="Male" value="" id="male">
+          <label for="male"> Male </label>
+        </div>
+     </fieldset>
+    </form>
+  </body>
+
+
+</html>
+
+<style media="screen">
+  body {
+    font-family: "helvetica"
+  }
+  fieldset {
+    border: 0px;
+  }
+  legend {
+    color: lightgrey;
+    font-size: 12px;
+  }
+  input {
+    color: lightgrey;
+    height: 24px;
+  }
+  label {
+    display: inline;
+    max-width: 50%;
+  }
+</style>

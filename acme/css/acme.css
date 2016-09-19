@@ -1,19 +1,7 @@
-main  {font-family: helvetica
-}
-header {
-  color: black;
-  background-color: #c4c4c4
-}
-footer {
-  text-align: center
-}
-
-
-
 <style media="screen">
   body {
     background-image: url("images/background.png");
-    font-family: lucida grande;
+    font-family: "lucida grande";
     margin: 0;
   }
   header {
@@ -30,7 +18,6 @@ footer {
     list-style: none;
     margin: 20px;
     margin-top: 30px;
-    text-shadow: 2px 2px grey;
   }
   main  {
     text-align: left;
@@ -64,5 +51,45 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     margin: 20px;
+  }
+  input {
+    padding-left: 6px;
+    color: #CCCCCC;
+    height: 24px;
+    margin: 0px;
+  }
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  select {
+    width: 100px;
+    float: left;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .blue {
+    color: #2A4CB2
+  }
+  .white {
+    text-shadow: 2px 2px gray;
+  }
+  .signup {
+    float: right;
+  }
+  .firsta {
+    text-decoration: none;
+    color: white;
+    float: right;
+  }
+  .secondb {
+    float: left;
+    margin: 0px;
   }
 </style>

@@ -1,0 +1,97 @@
+body {
+  font-family: "BlinkMacSystemFont";
+  background-color: #F1F0F5;
+  margin: 0px;
+}
+header {
+  color: white;
+  background: #069456;
+  padding: 8px;
+  height: 80px;
+}
+button {
+  color: white;
+  background-color: #069456;
+  border: 1px solid #069456;
+  box-shadow: 1px 1px 1px 1px;
+  height: 32px;
+  width: 80px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+a {
+  color: #10A364;
+  text-decoration: none;
+  padding-top: 20px;
+  font-weight: bold;
+}
+div {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+article {
+  display: block;
+  max-width: 600px;
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: absolute;
+}
+main {
+  text-align: left;
+  margin: 40px 30px;
+  border-bottom: 1 px gray;
+  border-radius: 5px;
+  padding: 10px 30px;
+  box-shadow: 0 0 10px gray;
+  background: white;
+}
+img {
+  border-radius: 8px;
+  height: 68px;
+  width: 68px;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+nav {
+  float: right;
+  color: white;
+  position: absolute;
+}
+.second {
+  border-top: 1px solid #CCCCCC;
+}
+.third {
+  border-top: 1px solid #CCCCCC;
+}
+.forth {
+  border-top: 1px solid #CCCCCC;
+}
+.footerlist {
+  display: inline;
+  color: #b4b4b4;
+  font-size: 12px;
+}
+footer {
+  vertical-align: baseline;
+  text-align: center;
+  display: block;
+}
+textarea {
+  max-width: 600px;
+  height: 68px;
+  border: 1px solid #CCCCCC;
+  color: #C0C0C0;
+  font-size: 16px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 4px;
+}
+section {
+  display: block;
+}

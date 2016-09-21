@@ -7,6 +7,7 @@ header {
   color: white;
   background: #069456;
   height: 80px;
+  padding: 8px;
 }
 button {
   color: white;
@@ -25,8 +26,8 @@ a {
   font-weight: bold;
 }
 div {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 article {
   max-width: 600px;

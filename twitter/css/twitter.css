@@ -37,7 +37,10 @@ article {
 section {
   display: inline;
 }
-
+span {
+  color: #b4b4b4;
+  font-size: 12px;
+}
 main {
   text-align: left;
   margin: 40px 30px;

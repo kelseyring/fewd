@@ -23,7 +23,9 @@
           <textarea name="dataentry" rows="8" cols="">What's happening?</textarea>
           <br>
           <button type="tweet"> Tweet </button>
+
         </section>
+
       </div>
 
       <div class="second">
@@ -33,6 +35,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </article>
           <a class= "like" href="#">Like</a>
+          <span>(6)</span>
         </section>
       </div>
 
@@ -43,6 +46,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </article>
           <a class= "like" href="#">Like</a>
+          <span>(54)</span>
         </section>
       </div>
 
@@ -53,6 +57,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </article>
           <a class= "like" href="#">Like</a>
+          <span>(12)</span>
         </section>
       </div>
     </main>
@@ -67,6 +72,27 @@
         <li class=footerlist> Contact Us </li>
       </ul>
     </footer>
+
+    <script type="text/javascript">
+    var tweet = document.createElement("div");
+    tweet.setAttribute("class", "fifth");
+
+    var img = document.createElement("img");
+    img.setAttribute("src", "images/photo2.jpg");
+    tweet.appendChild(img);
+
+    var section = document.createElement("section");
+    tweet.appendChild(section);
+
+    var article = document.createElement("article");
+    article.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+    tweet.appendChild(article);
+
+
+    document.querySelector("main").appendChild(tweet);
+
+    </script>
+
   </body>
 
 

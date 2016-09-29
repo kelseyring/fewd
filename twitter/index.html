@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+q<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -20,9 +20,10 @@
       <div class="first">
         <img src="images/photo1.jpg" alt width=40px/>
         <section>
-          <textarea name="dataentry" rows="8" cols="">What's happening?</textarea>
+          <textarea name="dataentry" rows="8" cols="" placeholder="What's happening?"></textarea>
+          <span class="character-limit"> 140 </span>
           <br>
-          <button type="tweet"> Tweet </button>
+          <button class="tweet"> Tweet </button>
 
         </section>
 
@@ -74,22 +75,51 @@
     </footer>
 
     <script type="text/javascript">
-    var tweet = document.createElement("div");
-    tweet.setAttribute("class", "fifth");
+    //Attaching the event to the button
+    var button = document.querySelector(".tweet");
+    button.addEventListener("click", createTweet);
+    console.log(button);
 
-    var img = document.createElement("img");
-    img.setAttribute("src", "images/photo2.jpg");
-    tweet.appendChild(img);
+    //Telling what the event should do once it calls it
+    function createTweet(event) {
+      event.preventDefault();
+      console.log("testing");
 
-    var section = document.createElement("section");
-    tweet.appendChild(section);
+      var tweet = document.createElement("div");
+      tweet.setAttribute("class", "fifth");
 
-    var article = document.createElement("article");
-    article.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-    tweet.appendChild(article);
+      var img = document.createElement("img");
+      img.setAttribute("src", "images/photo1.jpg");
+      tweet.appendChild(img);
+
+      var section = document.createElement("section");
+      tweet.appendChild(section);
+
+      var textarea = document.querySelector("textarea").value;
+      console.log(textarea);
+
+      var article = document.createElement("article");
+      article.textContent = textarea;
+      tweet.appendChild(article);
+
+      var like = document.createElement("like");
+      like.textContent = "Like";
+      tweet.appendChild(like);
+
+      document.querySelector("main").appendChild(tweet);
+      //reset form
+      document.querySelector("textarea").value = "";
+    }
+
+    //character count
+    function docCount(event) {
+      var remaining = document.querySelector(".character-limit");
+
+    }
+
+    remaining.addEventListener("keydown", docCount);
 
 
-    document.querySelector("main").appendChild(tweet);
 
     </script>
 

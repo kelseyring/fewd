@@ -162,53 +162,98 @@
     document.querySelector(".document-title").value = document.title;
 
     // full name
-    var f = document.querySelector(".first-name").value;
-    var l = document.querySelector(".last-name").value;
-    document.querySelector(".full-name").value = f + " " + l;
+    //var f = document.querySelector(".first-name").value;
+    //var l = document.querySelector(".last-name").value;
+    //document.querySelector(".full-name").value = f + " " + l;
+
+    function displayName (first, last, full) {
+      var f = document.querySelector(".first-name").value;
+      var l = document.querySelector(".last-name").value;
+      document.querySelector(".full-name").value = f + " " + l;
+    }
+    displayName ("first", "last", "full")
 
     // times table
 
       // first column
-      var a = parseInt(document.querySelector(".a1").value);
-      var b = parseInt(document.querySelector(".b0").value);
-      document.querySelector(".b1").value = a * b;
+      //var a = parseInt(document.querySelector(".a1").value);
+      //var b = parseInt(document.querySelector(".b0").value);
+      //document.querySelector(".b1").value = a * b;
 
-      var a = parseInt(document.querySelector(".c0").value);
-      var b = parseInt(document.querySelector(".b0").value);
-      document.querySelector(".c1").value = a * b;
+      //var a = parseInt(document.querySelector(".c0").value);
+      //var b = parseInt(document.querySelector(".b0").value);
+      //document.querySelector(".c1").value = a * b;
 
-      var a = parseInt(document.querySelector(".d0").value);
-      var b = parseInt(document.querySelector(".b0").value);
-      document.querySelector(".d1").value = a * b;
+      //var a = parseInt(document.querySelector(".d0").value);
+      //var b = parseInt(document.querySelector(".b0").value);
+      //document.querySelector(".d1").value = a * b;
 
-      var a = parseInt(document.querySelector(".e0").value);
-      var b = parseInt(document.querySelector(".b0").value);
-      document.querySelector(".e1").value = a * b;
+      //var a = parseInt(document.querySelector(".e0").value);
+      //var b = parseInt(document.querySelector(".b0").value);
+      //document.querySelector(".e1").value = a * b;
 
-      var a = parseInt(document.querySelector(".f0").value);
-      var b = parseInt(document.querySelector(".b0").value);
-      document.querySelector(".f1").value = a * b;
+      //var a = parseInt(document.querySelector(".f0").value);
+      //var b = parseInt(document.querySelector(".b0").value);
+      // document.querySelector(".f1").value = a * b;
+
+            //many times using functions
+
+function multiply(row, column, output) {
+  var b = parseInt(document.querySelector(row).value);
+  var a = parseInt(document.querySelector(column).value);
+  document.querySelector(output).value = a * b;
+}
+
+function multiplyRow(row) {
+  multiply(".a1", "." + row + "0", "." + row + "1");
+  multiply(".a2", "." + row + "0", "." + row + "2");
+  multiply(".a3", "." + row + "0", "." + row + "3");
+  multiply(".a4", "." + row + "0", "." + row + "4");
+  multiply(".a5", "." + row + "0", "." + row + "5");
+}
+
+multiplyRow("b");
+multiplyRow("c");
+multiplyRow("d");
+multiplyRow("e");
+multiplyRow("f");
+
+            // multiply(".b0", ".a1", ".b1");
+            // multiply(".b0", ".a2", ".c1");
+            // multiply(".b0", ".a3", ".d1");
+            // multiply(".b0", ".a4", ".e1");
+            // multiply(".b0", ".a5", ".f1");
+
+            // multiply(".c0", ".a1" , ".b2");
+            // multiply(".c0", ".a2", ".c2");
+            // multiply(".c0", ".a3", ".d2");
+            // multiply(".c0", ".a4", ".e2");
+            // multiply(".c0", ".a5", ".f2");
 
       // second column
-      var a = parseInt(document.querySelector(".a2").value);
-      var b = parseInt(document.querySelector(".b0").value);
-      document.querySelector(".b2").value = a * b;
+      //var a = parseInt(document.querySelector(".a2").value);
+      //var b = parseInt(document.querySelector(".b0").value);
+      //document.querySelector(".b2").value = a * b;
 
-      var a = parseInt(document.querySelector(".a2").value);
-      var b = parseInt(document.querySelector(".c0").value);
-      document.querySelector(".c2").value = a * b;
+      //var a = parseInt(document.querySelector(".a2").value);
+      //var b = parseInt(document.querySelector(".c0").value);
+      //document.querySelector(".c2").value = a * b;
 
-      var a = parseInt(document.querySelector(".a2").value);
-      var b = parseInt(document.querySelector(".d0").value);
-      document.querySelector(".d2").value = a * b;
+      //var a = parseInt(document.querySelector(".a2").value);
+      //var b = parseInt(document.querySelector(".d0").value);
+      //document.querySelector(".d2").value = a * b;
 
-      var a = parseInt(document.querySelector(".a2").value);
-      var b = parseInt(document.querySelector(".e0").value);
-      document.querySelector(".e2").value = a * b;
+      //var a = parseInt(document.querySelector(".a2").value);
+      //var b = parseInt(document.querySelector(".e0").value);
+      //document.querySelector(".e2").value = a * b;
 
-      var a = parseInt(document.querySelector(".a2").value);
-      var b = parseInt(document.querySelector(".f0").value);
-      document.querySelector(".f2").value = a * b;
+      //var a = parseInt(document.querySelector(".a2").value);
+      //var b = parseInt(document.querySelector(".f0").value);
+      //document.querySelector(".f2").value = a * b;
+
+          // first row using functions
+
+
 
       // third column
       var a = parseInt(document.querySelector(".a3").value);

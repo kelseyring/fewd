@@ -51,24 +51,27 @@
     <script>
     //like
     var like = document.querySelector (".like-link");
-    like.addEventListener("click", docCount);
+      like.addEventListener("click", docCount);
+
+    var likecount = parseInt (document.querySelector(".like-count").textContent);
+    //var number = parseInt(likecount.textContent);
 
     function docCount(event) {
       event.preventDefault();
+      likecount = likecount + 1;
+      document.querySelector(".like-count").textContent = likecount;
 
-      var likecount = document.querySelector (".like-count");
-      likecount.textContent= likecount + 1;
     }
 
 
     //comments
     var button = document.querySelector(".submit");
     button.addEventListener("click", createComment);
-    console.log(button);
+    //console.log(button);
 
     function createComment(event) {
       event.preventDefault();
-      console.log("testing");
+      //console.log("testing");
 
       var div = document.querySelector("#comments");
 

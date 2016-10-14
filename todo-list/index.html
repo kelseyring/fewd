@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+
+    <nav>
+      <h1> Today's Todos </h1>
+      <div class="navdiv">
+        <span class="doc-count">0</span> todos
+      </div>
+    </nav>
+
+    <form class="tasklist" action="index.html" method="post">
+      <div class="tasks">
+        <textarea  class="textarea" placeholder="What do you need to do today?"></textarea>
+        <button class="create" type="button" name="button">Create</button>
+      </div>
+    </form>
+
+    <!-- <ul> -->
+    <!-- <li> -->
+      <!-- <label> -->
+        <!-- <input type="checkbox" name="name" value=""> -->
+        <!-- <span> -->
+          <!-- Buy some milk -->
+        <!-- </span> -->
+      <!-- </label> -->
+    <!-- </li> -->
+    <!-- </ul> -->
+
+    <h2> Nothing to do... :( </h2>
+
+    <script type="text/javascript">
+    //tasklist
+    var create = document.querySelector("button");
+    var newtasks = document.querySelector(".tasklist");
+    create.addEventListener("click", addTodo);
+
+      function addTodo(event) {
+
+      var div = document.createElement("div");
+      var ul = document.createElement("ul");
+      var li = document.createElement("li");
+      var input = document.createElement("input");
+      input.setAttribute("type", "checkbox");
+      input.setAttribute("class", "task")
+      var span = document.createElement("span");
+      var textarea = document.querySelector(".textarea").value;
+      span.textContent = textarea;
+      console.log(textarea);
+
+      newtasks.appendChild(div);
+      newtasks.appendChild(ul);
+      ul.appendChild(li);
+      li.appendChild(input);
+      li.appendChild(span);
+
+      document.querySelector(".textarea").value = "";
+
+      var placeHolderInList = document.querySelector("h2");
+      placeHolderInList.style.display = "none";
+
+      var input = document.querySelectorAll(".task");
+      var span = document.querySelector(".doc-count");
+      span = parseInt(span);
+      document.querySelector(".doc-count").textContent = input.length;
+      }
+
+      //taskcount
+
+
+      //for (var i = 0; i < input.length; i++) {
+
+      //}
+
+    </script>
+
+  </body>
+</html>

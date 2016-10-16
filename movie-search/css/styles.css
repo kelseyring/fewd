@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(58, 58, 58);
+  font-family: helvetica;
+  color: white;
+}
+
+img {
+  height: 200px;
+  width: 144px;
+  margin: 5px;
+  border: 2px solid #333333;
+}

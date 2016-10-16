@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Text Content</title>
+  </head>
+  <body>
+    <p>
+      Hello World!
+    </p>
+
+    <ul>
+      <li>Milk</li>
+    </ul>
+    <footer></footer>
+
+    <script type="text/javascript">
+      var p = document.querySelector("p");
+      p.textContent = "Goodbye";
+
+      var li = document.querySelector("li");
+      var s = document.createElement("li");
+      s.textContent = "🍪🍪🍪🍪";
+      li.appendChild(s);
+
+      //Add Image
+          var img = document.createElement("img");
+          // var src = element.getAttribute("src");
+          img.setAttribute("src",  "http://kurld.com/images/wallpapers/image/image-24.jpg");
+          document.body.appendChild(img);
+          
+    </script>
+  </body>
+</html>

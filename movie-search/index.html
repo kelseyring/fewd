@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html land-"en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Favorite Movies</title>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
+    <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+
+      <h1> My Favorite Movies</h1>
+      <h2> Click on a movie to see the details.</h2>
+      <main>
+        <section class= "movies">
+          <img src="images/ib.jpg" id="tt0361748"/>
+          <img src="images/vforv.jpg" id="tt0434409"/>
+          <img src="images/td.jpg" id="tt0407887"/>
+          <br>
+          <img src="images/sb.jpg" id="tt0829482"/>
+          <img src="images/nh.jpg" id="tt0125439"/>
+        </section>
+
+        <section class= "info" >
+          <div class="">Title</div> <span id="title"></span>
+          <div class="">Year</div> <span id="year"></span>
+          <div class="">Rating</div> <span id="rating"></span>
+          <div class="">Runtime</div> <span id="runtime"></span>
+          <div class="">Plot</div> <span id="plot"></span>
+        </section>
+      </main>
+    </form>
+
+    <script type="text/javascript">
+      var links= document.querySelectorAll("img");
+
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", getInfo);
+      }
+
+      function  getInfo(event) {
+        var movieClick = event.target;
+        var imdbID = movieClick.getAttribute("id");
+        var newQuery = "https://omdbapi.com/?i=" + imdbID;
+
+        $.get(newQuery, displayResults);
+
+        function displayResults(results) {
+          document.querySelector("#title").textContent = results.Title;
+          document.querySelector("#year").textContent = results.Year;
+          document.querySelector("#rating").textContent = results.Rated;
+          document.querySelector("#runtime").textContent = results.Runtime;
+          document.querySelector("#plot").textContent = results.Plot;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  background-color: #808080;
+  font-family: "whitney";
+
+}
+
+.title {
+  color: #57849E;
+  font-size: 18px;
+  font-family: "vitesse";
+  font-weight: 700;
+  padding-left: 16px;
+}
+
+form {
+  background-color: white;
+  max-width: 1012px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+input {
+  background-color: white;
+  border-color: #CCCCCC;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+label {
+  font-size: 10px;
+  color: #808080;
+  margin: 16px;
+  font-weight: 400;
+}
+
+.newsection {
+  padding-top: 16px;
+}
+.title2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  margin: 16px;
+}
+
+.default {
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #333333;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 500;
+  margin: 16px;
+}
+.cta {
+  background-color: .blue;
+  border-color: .mdblue;
+}
+
+.primary {
+  height: 32px;
+}
+
+.secondary {
+  height: 24px;
+}
+
+.red {
+  color: #EE3124;
+}
+.cta {
+  background-color: #0072B2;;
+  border: 1px solid #004E7A;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 500;
+  color: white;
+  float: right;
+  margin: 16px;
+  
+}
+#right-aligned {
+  float: right;
+  padding-right: 16px;
+}
+
+.header {
+  background-color: #D8E3E9;
+  height: 56px;
+  padding: 12px;
+}
+
+.blue {
+  background-color: #0072b2;
+}
+.main {
+  background-color: #E5ECF1;
+}

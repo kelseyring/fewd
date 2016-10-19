@@ -1,7 +1,6 @@
 body {
   background-color: #808080;
   font-family: "whitney";
-
 }
 
 .title {
@@ -80,7 +79,17 @@ label {
   color: white;
   float: right;
   margin: 16px;
-  
+}
+.default-primary {
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #333333;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 500;
+  margin: 16px;
+  float: right;
 }
 #right-aligned {
   float: right;

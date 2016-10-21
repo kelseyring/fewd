@@ -7,8 +7,8 @@ body {
   color: #57849E;
   font-size: 18px;
   font-family: "vitesse";
-  font-weight: 700;
-  padding-left: 16px;
+  font-weight: 700;=
+  margin-top: 16px;
 }
 
 form {
@@ -31,10 +31,14 @@ label {
   color: #808080;
   margin: 16px;
   font-weight: 400;
+  text-align: right;
+  width: 160px;
 }
 
-.newsection {
-  padding-top: 16px;
+.new-section {
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px solid white;
 }
 .title2 {
   font-size: 14px;
@@ -43,42 +47,78 @@ label {
   margin: 16px;
 }
 
+.primary {
+  height: 32px;
+  color: #333333;
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+.secondary {
+  height: 24px;
+  color: #333333;
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  color: #333333;
+}
+.size-xxl {
+  width: 192px;
+}
 .default {
   background-color: white;
   border: 1px solid #808080;
   border-radius: 4px;
   color: #333333;
-  padding-left: 8px;
+  padding-left: 0px;
   padding-right: 8px;
+  padding-top:0px;
+  padding-bottom:0px;
   font-weight: 500;
   margin: 16px;
-}
-.cta {
-  background-color: .blue;
-  border-color: .mdblue;
-}
-
-.primary {
-  height: 32px;
-}
-
-.secondary {
   height: 24px;
+  font-size: 12px;
 }
-
+.form-buttons {
+  float: right;
+}
+button {
+  min-width: 64px;
+}
 .red {
   color: #EE3124;
 }
 .cta {
-  background-color: #0072B2;;
+  background-color: #0072B2;
   border: 1px solid #004E7A;
   border-radius: 4px;
   padding-left: 8px;
   padding-right: 8px;
   font-weight: 500;
   color: white;
-  float: right;
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  height: 32px;
+}
+.cta:hover {
+  background-color: #004E7A;
+  border: 1px solid #003452;
+}
+.default:hover {
+  border: 1px solid #333333;
+}
+.default-primary:hover {
+  border: 1px solid #333333;
+}
+.modal-title {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .default-primary {
   background-color: white;
@@ -88,12 +128,13 @@ label {
   padding-left: 8px;
   padding-right: 8px;
   font-weight: 500;
-  margin: 16px;
-  float: right;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: 8px;
+  height: 32px;
 }
 #right-aligned {
   float: right;
-  padding-right: 16px;
 }
 
 .header {
@@ -101,10 +142,48 @@ label {
   height: 56px;
   padding: 12px;
 }
+select {
+  text-align: left;
+  padding: 0px;
+  padding-left: 8px;
+  height: 24px;
+  width: 192px;
+  color: #333333;
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: "whitney";
+  font-size: 12px;
+}
+input {
+  text-align: left;
+  padding: 0px;
+  padding-left: 8px;
+}
 
 .blue {
   background-color: #0072b2;
 }
 .main {
   background-color: #E5ECF1;
+}
+.tlabel {
+  font-size: 10px;
+  color: #808080;
+  margin: 16px;
+  font-weight: 400;
+  text-align: left;
+  width: 160px;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+option {
+  color: #333333;
+  background-color: white;
+  padding-left: 8px;
+}
+img {
+  padding: 8px;
 }

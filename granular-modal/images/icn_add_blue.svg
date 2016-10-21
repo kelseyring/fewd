@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Plus_Blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plus_Blue-Copy" fill="#0072B2">
+            <path d="M6,0 C2.685,0 0,2.6865 0,6 C0,9.3135 2.685,12 6,12 C9.3135,12 12,9.3135 12,6 C12,2.6865 9.3135,0 6,0 L6,0 Z M9.50625,7.0125 L7.01325,7.0125 L7.01325,9.50625 L5.01825,9.50625 L5.01825,7.0125 L2.52525,7.0125 L2.52525,5.01825 L5.01825,5.01825 L5.01825,2.52525 L7.0125,2.52525 L7.0125,5.01825 L9.5055,5.01825 L9.5055,7.0125 L9.50625,7.0125 L9.50625,7.0125 Z" id="Plus_Blue"></path>
+        </g>
+    </g>
+</svg>

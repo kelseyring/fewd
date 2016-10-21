@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Granular Task Modal</title>
+
     <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,11 +13,13 @@
   <body>
     <div class="container">
       <div class="row">
-        <span class="title"> Planting Task Details</span>
-        <span id="right-aligned" class="red">Required</span>
+
 
         <form class="form-inline" action="index.html" method="post">
-
+          <div class="modal-title">
+            <span class="title"> Planting Task Details</span>
+            <span id="right-aligned" class="red">Required</span>
+          </div>
 
           <div class="header">
             <input class="primary" type="text" value="Planting">
@@ -24,29 +27,95 @@
           <div class="main">
             <div class="navy8">
               <label for="crop-type">CROP TYPE</label>
-              <input class="secondary" type="text" value="">
+              <select class="" name="">
+                <option>Choose...</option>
+                <option>Commercial Corn</option>
+                <option>Food Grade Soybean</option>
+                <option>Hard Red Winter Wheat</option>
+              </select>
               <br>
               <label for="crop-type">DEFAULT SEED</label>
-              <input class="secondary" type="text" value="">
+              <select class="" name="">
+                <option>Choose...</option>
+                <option>5140HR</option>
+                <option>5665AMX</option>
+                <option>5828AM</option>
+              </select>
               <br>
               <label for="crop-type">ESTIMATED PLANTING DATE</label>
-              <input class="secondary" type="text" value="">
-              <br>
-              <label for="crop-type">DEFAULT INPUT STORAGE</label>
-              <input class="secondary" type="text" value="">
-            </div>
+              <select class="" name="">
+                <option>Choose...</option>
+                <option>Home Storage A</option>
 
-            <div class="newsection">
-              <span class="title2">Inputs</span>
+              </select>
               <br>
-              <button type="button" class="default">Add Input</button>
+                  <label for="crop-type">DEFAULT INPUT STORAGE</label>
+                  <select class="" name="">
+                    <option>Choose...</option>
+                    <option>Home Storage A</option>
+                    <option>Home Storage B</option>
+                    <option>Home Storage C</option>
+                  </select>
+
+                  <div class="new-section">
+                    <span class="title2">Inputs</span>
+                    <br>
+
+                    <div class="new-input">
+                      <s class="tlabel">Input Name</s>
+                    </div>
+                    <div class="input-field">
+                    </div>
+                    <div class="rate">
+                    </div>
+
+                    <button type="add button" class="default"><img src="images/icn_add_blue.svg"/>Add Input</button>
+                  </div>
+                </div>
+                <div class="form-buttons">
+
+                  <button type="button" class="default-primary">Cancel</button>
+                  <button type="button" class="cta">Save</button>
+                </div>
             </div>
-          </div>
+            </div>
         </form>
-        <button type="button" class="cta">Save</button>
-        <button type="button" class="default-primary">Cancel</button>
 
-      </div>
-    </div>
+<script type="text/javascript">
+  var button = document.querySelector(".default");
+  button.addEventListener("click", addInput);
+
+  function addInput(event) {
+    event.preventDefault();
+    //console.log("testing");
+    var div = document.querySelector(".new-input");
+    var tlabel = document.createElement("tlabel");
+    tlabel.textContent = "INPUT NAME";
+    tlabel.setAttribute = ".tlabel";
+    div.appendChild(tlabel);
+
+    var inputField = document.querySelector(".input-field");
+    var select = document.createElement("select");
+    select.setAttribute = "select";
+    inputField.appendChild(select);
+    var option = document.createElement("option");
+    option.textContent = "Choose...";
+    option.setAttribute("value", "Choose...");
+    select.appendChild(option);
+    var br = document.querySelector("br");
+    option.appendChild(br);
+    //var optionb = document.createElement("optionb");
+    //optionb.textContent = "Lime";
+    //optionb.setAttribute("value", "Lime");
+    //optionb.setAttribute("line-height", "24px");
+    //br.appendChild(optionb);
+
+  }
+
+
+
+
+</script>
+
   </body>
 </html>

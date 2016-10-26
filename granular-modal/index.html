@@ -5,17 +5,12 @@
     <title>Granular Task Modal</title>
 
     <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
 
 
-        <form class="form-inline" action="index.html" method="post">
+        <form>
           <div class="modal-title">
             <span class="title"> Planting Task Details</span>
             <span id="right-aligned" class="red">Required</span>
@@ -25,8 +20,8 @@
             <input class="primary" type="text" value="Planting">
           </div>
           <div class="main">
-            <div class="navy8">
-              <label for="crop-type">CROP TYPE</label>
+
+              <label class=label-right for="crop-type">CROP TYPE</label>
               <select class="" name="">
                 <option>Choose...</option>
                 <option>Commercial Corn</option>
@@ -34,7 +29,7 @@
                 <option>Hard Red Winter Wheat</option>
               </select>
               <br>
-              <label for="crop-type">DEFAULT SEED</label>
+              <label class=label-right for="crop-type">DEFAULT SEED</label>
               <select class="" name="">
                 <option>Choose...</option>
                 <option>5140HR</option>
@@ -42,14 +37,14 @@
                 <option>5828AM</option>
               </select>
               <br>
-              <label for="crop-type">ESTIMATED PLANTING DATE</label>
+              <label class=label-right for="crop-type">ESTIMATED PLANTING DATE</label>
               <select class="" name="">
                 <option>Choose...</option>
                 <option>Home Storage A</option>
 
               </select>
               <br>
-                  <label for="crop-type">DEFAULT INPUT STORAGE</label>
+                  <label class=label-right for="crop-type">DEFAULT INPUT STORAGE</label>
                   <select class="" name="">
                     <option>Choose...</option>
                     <option>Home Storage A</option>
@@ -59,13 +54,14 @@
 
                   <div class="new-section">
                     <span class="title2">Inputs</span>
-                    <br>
+
 
                     <div class="new-input">
-                      <s class="tlabel">Input Name</s>
                     </div>
+
                     <div class="input-field">
                     </div>
+
                     <div class="rate">
                     </div>
 
@@ -77,8 +73,6 @@
                   <button type="button" class="default-primary">Cancel</button>
                   <button type="button" class="cta">Save</button>
                 </div>
-            </div>
-            </div>
         </form>
 
 <script type="text/javascript">
@@ -89,28 +83,93 @@
     event.preventDefault();
     //console.log("testing");
     var div = document.querySelector(".new-input");
-    var tlabel = document.createElement("tlabel");
-    tlabel.textContent = "INPUT NAME";
-    tlabel.setAttribute = ".tlabel";
-    div.appendChild(tlabel);
+    var table = document.createElement("table");
+    div.appendChild(table);
+    table.setAttribute("class", "table");
 
-    var inputField = document.querySelector(".input-field");
+    if (true) {
+      //table headers
+      var thead = document.createElement("tr");
+      thead.setAttribute("class", "thead");
+      table.appendChild(thead);
+
+      var th = document.createElement("th");
+      th.textContent = "INPUT NAME";
+      thead.appendChild(th);
+
+      var th = document.createElement("th");
+      th.textContent = "TYPE";
+      thead.appendChild(th);
+
+      var th = document.createElement("th");
+      th.textContent = "AREA";
+      thead.appendChild(th);
+
+      var th = document.createElement("th");
+      th.textContent = "RATE";
+      thead.appendChild(th);
+
+      var th = document.createElement("th");
+      th.textContent = "TOTAL";
+      thead.appendChild(th);
+    }
+
+    //table data
+    var tr = document.createElement("tr");
+    table.appendChild(tr);
+    tr.setAttribute("class", "tr");
+
+    var td = document.createElement("td");
+    tr.appendChild(td);
     var select = document.createElement("select");
-    select.setAttribute = "select";
-    inputField.appendChild(select);
+    select.textContent = "Choose...";
+    select.setAttribute("class", "table-input");
+    td.appendChild(select);
+    //
     var option = document.createElement("option");
     option.textContent = "Choose...";
     option.setAttribute("value", "Choose...");
     select.appendChild(option);
-    var br = document.querySelector("br");
-    option.appendChild(br);
-    //var optionb = document.createElement("optionb");
-    //optionb.textContent = "Lime";
-    //optionb.setAttribute("value", "Lime");
-    //optionb.setAttribute("line-height", "24px");
-    //br.appendChild(optionb);
 
+    var td = document.createElement("td");
+    tr.appendChild(td);
+    var text = document.createElement("text");
+    text.textContent = "Mix";
+    td.setAttribute("class", "body-copy");
+    td.appendChild(text);
+
+    var td = document.createElement("td");
+    tr.appendChild(td);
+    var text = document.createElement("text");
+    td.textContent = "100.00 ac";
+    td.setAttribute("class", "body-copy");
+    td.appendChild(text);
+
+    var td = document.createElement("td");
+    tr.appendChild(td);
+    var input = document.createElement("input");
+    input.setAttribute("class", "input");
+    td.appendChild(input);
+    var text = document.createElement("text");
+    text.textContent = "seed/ac";
+    text.setAttribute("class", "body-copy");
+    td.appendChild(text);
+
+    var td = document.createElement("td");
+    tr.appendChild(td);
+    var text = document.createElement("text");
+    text.textContent = "-- bag";
+    text.setAttribute("class", "body-copy");
+    td.appendChild(text);
   }
+
+
+
+
+
+
+
+
 
 
 

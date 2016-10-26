@@ -1,6 +1,6 @@
 body {
-  background-color: #808080;
-  font-family: "whitney";
+  background-color: #FFFFFF;
+  font-family: "Whitney";
 }
 
 .title {
@@ -9,6 +9,8 @@ body {
   font-family: "vitesse";
   font-weight: 700;=
   margin-top: 16px;
+  padding-left:16
+  padding-right:16
 }
 
 form {
@@ -26,13 +28,13 @@ input {
   padding: 8px;
 }
 
-label {
+.label-right {
   font-size: 10px;
   color: #808080;
-  margin: 16px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: right;
   width: 160px;
+  display: inline-block;
 }
 
 .new-section {
@@ -47,6 +49,34 @@ label {
   margin: 16px;
 }
 
+.input {
+  color: #333333;
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 16px;
+  height: 24px;
+  margin-left: 16px;
+}
+.size-xxl {
+  width: 192px;
+}
+.size-xl {
+  width: 160px;
+}
+.size-l {
+  width: 128px;
+}
+.size-m {
+  width: 96px;
+}
+.size-s {
+  width: 80px;
+}
+.size-xs {
+  width: 64px;
+}
 .primary {
   height: 32px;
   color: #333333;
@@ -54,6 +84,7 @@ label {
   border: 1px solid #808080;
   border-radius: 4px;
   font-weight: 800;
+  font-size: 16px;
 }
 
 .secondary {
@@ -63,7 +94,14 @@ label {
   border: 1px solid #808080;
   border-radius: 4px;
 }
-
+th {
+  font-size: 10px;
+  color: #808080;
+  margin-top: 16px;
+  margin-right: 16px;
+  font-weight: 600;
+  text-align: left;
+}
 .dropdown-menu {
   color: #333333;
 }
@@ -92,6 +130,8 @@ button {
 }
 .red {
   color: #EE3124;
+  font-size: 12px;
+  font-weight: 400;
 }
 .cta {
   background-color: #0072B2;
@@ -105,6 +145,7 @@ button {
   margin-bottom: 16px;
   margin-left: 8px;
   height: 32px;
+  font-size: 14px;
 }
 .cta:hover {
   background-color: #004E7A;
@@ -115,6 +156,7 @@ button {
 }
 .default-primary:hover {
   border: 1px solid #333333;
+
 }
 .modal-title {
   padding-top: 8px;
@@ -132,6 +174,7 @@ button {
   margin-bottom: 16px;
   margin-right: 8px;
   height: 32px;
+  font-size: 14px;
 }
 #right-aligned {
   float: right;
@@ -139,13 +182,14 @@ button {
 
 .header {
   background-color: #D8E3E9;
-  height: 56px;
+
   padding: 12px;
 }
 select {
   text-align: left;
-  padding: 0px;
-  padding-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 16px;
   height: 24px;
   width: 192px;
   color: #333333;
@@ -154,30 +198,49 @@ select {
   border-radius: 4px;
   font-family: "whitney";
   font-size: 12px;
+  font-weight: 400;
+}
+.table-input {
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  height: 24px;
+  width: 192px;
+  color: #333333;
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: "whitney";
+  font-size: 12px;
+  font-weight: 400;
+}
+table {
+  width: 100%;
+}
+.thead {
+  border-bottom: 1px solid #D8E3E9;
 }
 input {
   text-align: left;
   padding: 0px;
   padding-left: 8px;
+  height: 32px;
 }
-
+.body-copy {
+  text-align: left;
+  margin-left: 16px;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+}
 .blue {
   background-color: #0072b2;
 }
 .main {
   background-color: #E5ECF1;
 }
-.tlabel {
-  font-size: 10px;
-  color: #808080;
-  margin: 16px;
-  font-weight: 400;
-  text-align: left;
-  width: 160px;
-  display: inline-block;
-  font-weight: 700;
-  text-decoration:none;
-  text-transform: uppercase;
+
 }
 option {
   color: #333333;
@@ -185,5 +248,9 @@ option {
   padding-left: 8px;
 }
 img {
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 2px;
+  position: relative;
+  height: 12px;
 }

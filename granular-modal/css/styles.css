@@ -215,9 +215,7 @@ select {
   font-size: 12px;
   font-weight: 400;
 }
-table {
-  width: 100%;
-}
+
 .thead {
   border-bottom: 1px solid #D8E3E9;
 }

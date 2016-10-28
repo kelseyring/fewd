@@ -216,7 +216,10 @@ table {
 tr {
   border: 1px solid white;
 }
-
+.tr:hover {
+  background-color: #D8E3E9;
+  img src="images/icn_add_blue.svg"
+}
 .table-input {
   text-align: left;
   margin-top: 8px;

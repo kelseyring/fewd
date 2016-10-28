@@ -86,4 +86,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     text.setAttribute("class", "body-copy");
     td.appendChild(text);
   }
+
 });

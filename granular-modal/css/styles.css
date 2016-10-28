@@ -1,6 +1,8 @@
 body {
-  background-color: #FFFFFF;
+  background-color: #808080;
   font-family: "Whitney";
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .title {
@@ -16,9 +18,9 @@ body {
 form {
   background-color: white;
   max-width: 1012px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
 }
 
 input {
@@ -35,6 +37,7 @@ input {
   text-align: right;
   width: 160px;
   display: inline-block;
+  padding-right: 16px;
 }
 
 .new-section {
@@ -46,7 +49,7 @@ input {
   font-size: 14px;
   font-weight: 600;
   color: #333333;
-  margin: 16px;
+  padding: 16px;
 }
 
 .input {
@@ -57,7 +60,7 @@ input {
   font-weight: 800;
   font-size: 16px;
   height: 24px;
-  margin-left: 16px;
+
 }
 .size-xxl {
   width: 192px;
@@ -125,6 +128,13 @@ th {
 .form-buttons {
   float: right;
 }
+th {
+  padding-left: 16px;
+}
+td {
+  padding-left: 16px;
+}
+
 button {
   min-width: 64px;
 }
@@ -189,7 +199,7 @@ select {
   text-align: left;
   margin-top: 8px;
   margin-bottom: 8px;
-  margin-left: 16px;
+
   height: 24px;
   width: 192px;
   color: #333333;
@@ -200,11 +210,18 @@ select {
   font-size: 12px;
   font-weight: 400;
 }
+table {
+  margin-top: 16px;
+}
+tr {
+  border: 1px solid white;
+}
+
 .table-input {
   text-align: left;
   margin-top: 8px;
   margin-bottom: 8px;
-  margin-left: 16px;
+
   height: 24px;
   width: 192px;
   color: #333333;

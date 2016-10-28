@@ -126,7 +126,7 @@ th {
   font-size: 12px;
 }
 .form-buttons {
-  float: right;
+
 }
 th {
   padding-left: 16px;
@@ -188,6 +188,7 @@ button {
 }
 #right-aligned {
   float: right;
+  background-color: #FFFFFF;
 }
 
 .header {
